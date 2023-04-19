@@ -1,4 +1,3 @@
-
 resource "aws_lb" "this" {
   name               = "${var.name}-alb-${var.stage}"
   internal           = false
