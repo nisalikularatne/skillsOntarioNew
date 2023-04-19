@@ -35,6 +35,6 @@ variable "domain_name" {
 variable "namespace" {
   type        = string
   description = "Project name"
-  default     = "final"
+  default     = "week3"
 }
 
