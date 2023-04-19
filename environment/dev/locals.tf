@@ -1,0 +1,12 @@
+data "aws_caller_identity" "current" {}
+data "aws_region" "current" {}
+data "aws_iam_role" "labrole" {
+  name = "ecsTaskExecutionRole"
+}
+
+locals {
+  prefix       = "${var.name}-${var.stage}"
+  region       = data.aws_region.current.name
+  ecr_repo     = "${data.aws_caller_identity.current.account_id}.dkr.ecr.${data.aws_region.current.name}.amazonaws.com/${local.prefix}-repo"
+  lab_role_arn = data.aws_iam_role.labrole.arn
+}
