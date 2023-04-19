@@ -5,7 +5,6 @@ resource "aws_lb" "this" {
   load_balancer_type = "application"
   security_groups    = [module.ecs_alb_sg.id]
   subnets            = module.dynamic_subnets.public_subnet_ids
-
   enable_deletion_protection = false
 
   tags = {
