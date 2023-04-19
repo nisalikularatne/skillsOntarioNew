@@ -1,5 +1,5 @@
 resource "aws_ecs_service" "blue" {
-  name                               = "${local.prefix}-service-blue"
+  name                               = "${local.prefix}-service"
   cluster                            = aws_ecs_cluster.this.id
   task_definition                    = aws_ecs_task_definition.blue.arn
   desired_count                      = var.service_desired_count
@@ -29,7 +29,7 @@ resource "aws_ecs_service" "blue" {
   }
 }
 resource "aws_appautoscaling_policy" "this" {
-  name               = "blue-service-scaling-policy"
+  name               = "service-scaling-policy"
   policy_type        = "TargetTrackingScaling"
   resource_id        = "service/${aws_ecs_cluster.this.name}/${aws_ecs_service.blue.name}"
   scalable_dimension = "ecs:service:DesiredCount"
