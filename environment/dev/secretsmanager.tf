@@ -5,7 +5,7 @@ resource "random_password" "this" {
 }
 
 resource "aws_secretsmanager_secret" "this" {
-  name = "application-database-password-eight"
+  name = "application-database-password-ten"
 }
 
 resource "aws_secretsmanager_secret_version" "this" {
