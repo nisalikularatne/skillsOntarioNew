@@ -23,7 +23,7 @@ on:
       - completed
 
 env:
-  PREFIX:  skills-dev
+  PREFIX:  skills-ontario-dev
   ECR_REPOSITORY:  repo
   ECS_SERVICE:   service
   ECS_CLUSTER:   cluster
