@@ -14,7 +14,6 @@ COLOR_FROM_ENV = os.environ.get('APP_COLOR') or "lime"
 DBPORT = int(os.environ.get("DBPORT"))
 PORT = int(os.environ.get("PORT"))
 ROUTE = os.environ.get("ROUTE") or "/blue"
-
 # Create a connection to the MySQL database
 db_conn = connections.Connection(
     host=DBHOST,
