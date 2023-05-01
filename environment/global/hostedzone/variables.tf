@@ -1,7 +1,7 @@
 variable "domain_name" {
   type        = string
   description = "DNS name you own"
-  default     = "nisalikularatne.ca"
+  default     = "skillsontarioaws.xyz"
 }
 
 variable "stage" {
@@ -13,11 +13,11 @@ variable "stage" {
 variable "namespace" {
   type        = string
   description = "Project name"
-  default     = "week3"
+  default     = "competition"
 }
 
 variable "name" {
   type        = string
   description = "No idea what name is for"
-  default     = "todo-app"
+  default     = "skills-ontario"
 }

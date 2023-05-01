@@ -9,7 +9,7 @@ variable "ipv4_primary_cidr_block" {
 variable "name" {
   type        = string
   description = "A string for naming stuff"
-  default     = "skills"
+  default     = "skills-ontario"
 }
 variable "stage" {
   type        = string
@@ -30,11 +30,10 @@ variable "service_desired_count" {
 variable "domain_name" {
   type        = string
   description = "DNS name you own"
-  default     = "nisalikularatne.ca"
+  default     = "skillsontarioaws.xyz"
 }
 variable "namespace" {
   type        = string
   description = "Project name"
-  default     = "week3"
+  default     = "competition"
 }
-
