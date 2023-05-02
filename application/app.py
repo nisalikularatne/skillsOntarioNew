@@ -3,6 +3,7 @@ from pymysql import connections
 import os
 import random
 import argparse
+
 app = Flask(__name__)
 DBHOST = os.environ.get("DBHOST") or "localhost"
 DBUSER = os.environ.get("DBUSER") or "root"
